@@ -2,9 +2,10 @@
   "name": "TM_App_Mongodb",
   "version": "1.0.0",
   "description": "",
-  "main": "mongodb.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^3.6.6",
-    "mongoose": "^5.12.9"
+    "mongoose": "^5.12.9",
+    "validator": "^13.6.0"
   }
 }
