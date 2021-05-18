@@ -44,18 +44,6 @@ app.get("/users/:id", (req, res) => {
       res.status(500).send();
     });
 });
-app.post("/task", (req, res) => {
-  const task = new Task(req.body);
-
-  task
-    .save()
-    .then(() => {
-      res.status(201).send(task);
-    })
-    .catch(() => {
-      res.status(400).send(e);
-    });
-});
 
 app.listen(port, () => {
   console.log("server on");
